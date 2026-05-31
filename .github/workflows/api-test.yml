@@ -1,0 +1,27 @@
+name: API Testing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-api-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Postman Collection
+        run: |
+          newman run BookingAPI.postman_collection.json -e Dev.postman_environment.json -d APItesting.csv -r cli -r htmlextra -n 4

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Luis learn API" tests="24" time="13.935">
+  <testsuite name="Booking office / Get token" id="073be8ef-7439-4fa6-a0fd-dad94fc5f0b7" timestamp="2026-05-31T10:42:21.548Z" tests="0" failures="0" errors="0" time="1.978"/>
+  <testsuite name="Booking office / Create booking" id="2a621e41-508b-40f8-b181-5feb02b14de5" timestamp="2026-05-31T10:42:21.548Z" tests="8" failures="0" errors="0" time="0.525">
+    <testcase name="Status code is 200" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="Response time is less than 300ms" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="Response body contains 'Eric'" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="Content-Type is application/json" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="Check data type" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="Verify value 'name' in response" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="First name is correct" time="0.311" classname="BookingOfficeCreateBooking"/>
+    <testcase name="Last name is correct" time="0.311" classname="BookingOfficeCreateBooking"/>
+  </testsuite>
+  <testsuite name="Booking office / Get all booking" id="4e812119-95e1-4cdf-ace9-457aada3c8a1" timestamp="2026-05-31T10:42:21.548Z" tests="1" failures="0" errors="0" time="0.411">
+    <testcase name="Verify booking id existing" time="0.626" classname="BookingOfficeGetAllBooking"/>
+  </testsuite>
+  <testsuite name="Booking office / Get a booking" id="24441790-2e01-4c72-a661-08ff08028093" timestamp="2026-05-31T10:42:21.548Z" tests="6" failures="0" errors="0" time="0.364">
+    <testcase name="Status code is 200" time="0.315" classname="BookingOfficeGetABooking"/>
+    <testcase name="Response time is less than 300ms" time="0.315" classname="BookingOfficeGetABooking"/>
+    <testcase name="Response body contains 'Eric'" time="0.315" classname="BookingOfficeGetABooking"/>
+    <testcase name="Content-Type is application/json" time="0.315" classname="BookingOfficeGetABooking"/>
+    <testcase name="Check data type" time="0.315" classname="BookingOfficeGetABooking"/>
+    <testcase name="Verify value 'name' in response" time="0.315" classname="BookingOfficeGetABooking"/>
+  </testsuite>
+  <testsuite name="Booking office / Update booking" id="878fa45f-52ec-4320-b3ae-5436d599c48a" timestamp="2026-05-31T10:42:21.548Z" tests="0" failures="0" errors="0" time="0.429"/>
+  <testsuite name="Booking office / Partial update booking" id="458608cd-f1a9-48d9-8c3a-53178d13af4d" timestamp="2026-05-31T10:42:21.548Z" tests="0" failures="0" errors="0" time="0.300"/>
+  <testsuite name="Booking office / Delete booking" id="568a6130-0929-4351-b6da-6d483d7506c9" timestamp="2026-05-31T10:42:21.548Z" tests="0" failures="0" errors="0" time="0.298"/>
+  <testsuite name="New Folder / Create booking Copy" id="b3b57ba1-e9e1-4bda-8876-9ca21a00eec9" timestamp="2026-05-31T10:42:21.548Z" tests="10" failures="0" errors="0" time="0.340">
+    <testcase name="Status code is 200" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Response time is less than 300ms" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Response body contains 'Eric'" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Content-Type is application/json" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Check data type" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Verify value 'name' in response" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Verify Checkout date in response" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Check status code" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="First name is correct" time="0.375" classname="NewFolderCreateBookingCopy"/>
+    <testcase name="Last name is correct" time="0.375" classname="NewFolderCreateBookingCopy"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,4 @@
+﻿firstName,lastName,price,deposit,checkin,checkout,meal,statusCodeInFile
+Nguyen,Mia,1000,TRUE,2025-05-12,2025-05-20,Breakfast,200
+Lona,Vo,2000,FALSE,2025-05-12,2025-05-21,Lunch,200
+Summer,Truong,3000,TRUE,2025-05-12,2025-05-22,Dinner,200
