@@ -22,6 +22,9 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
 
+      - name: HTML Report
+        run: npm install -g newman-reporter-htmlextra
+
       - name: Run Postman Collection
         run: |
           newman run BookingAPI.postman_collection.json -e Dev.postman_environment.json -d APItesting.csv -r cli -r htmlextra -n 4
