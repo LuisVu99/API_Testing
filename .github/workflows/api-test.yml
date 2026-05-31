@@ -27,4 +27,10 @@ jobs:
 
       - name: Run Postman Collection
         run: |
-          newman run BookingAPI.postman_collection.json -e Dev.postman_environment.json -d APItesting.csv -r cli -r htmlextra -n 4
+          newman run BookingAPI.postman_collection.json -e Dev.postman_environment.json -d APItesting.csv -r cli -r htmlextra -n 4 --reporter-htmlextra-export report.html
+
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+            name: API-Test-Report
+            path: report.html
